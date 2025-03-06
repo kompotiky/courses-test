@@ -1,65 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	
-  	<link rel="stylesheet"  href="./index.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" />
-  	
-  	
-  	
+    <meta charset="utf-8">
+    <title>title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  	
-  	<div class="main-container">
-    		<div class="cover">
-      			<div class="h1-header">
-        				<div class="header">
-          					<div class="tetle">
-            						<b class="header1">
-              							<p class="p">Как делать </p>
-              							<p class="p">презентации </p>
-              							<p class="p">в Фигме</p>
-            						</b>
-            						<img class="element-fire-icon" alt="" src="element-fire.svg">
-            						
-          					</div>
-          					<div class="text">
-            						<p class="p">Вы научитесь создавать презентации, которые сразу цепляют внимание. Ваши слайды станут стильными, понятными и эффективными — без перегруза текстом и долгих правок. </p>
-            						<p class="p">Вы больше не будете прятать смысл в сложных схемах, а сделаете подачу логичной и наглядной.</p>
-          					</div>
-        				</div>
-        				<div class="tags">
-          					<div class="tags-works">
-            						<div class="div">
-              							<p class="p">4 работы </p>
-              							<p class="p">в портфолио</p>
-            						</div>
-          					</div>
-          					<div class="tags-works">
-            						<div class="div">
-              							<p class="p">Онлайн</p>
-              							<p class="p">обучение</p>
-            						</div>
-          					</div>
-          					<div class="tags-works">
-            						<div class="div">
-              							<p class="p">Всего</p>
-              							<p class="p">4 недели</p>
-            						</div>
-          					</div>
-        				</div>
-      			</div>
-      			<div class="main-pictures">
-        				<img class="main-pictures-icon" alt="" src="main-pictures.png">
-        				
-      			</div>
-    		</div>
-  	</div>
-  	
-  	
-  	
-  	
+    <div class="back-primary">
+        <header class="header back-primary">
+            <nav class="left">
+                <a class="brand" href="#">
+                    <img src="logo.svg" alt="logo" />
+                </a>
+            </nav>
+            <nav class="center">
+                <a href="#" class="button-link">О бренде</a>
+                <a href="#" class="button-link">Продукты</a>
+                <a href="#" class="button-link">Блог</a>
+            </nav>
+            <nav class="right">
+                <a href="#" class="icon-link">
+                    <img src="search.svg" alt="Search" />
+                </a>
+                <a href="#" class="icon-link">
+                    <img src="shop.svg" alt="Shop" />
+                </a>
+            </nav>
+        </header>
+        <div class="hero1 row">
+                <div class="hero-content">
+                    <h2>Самое вкусное</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>
+                             Cамые популярные продукты для первого прикорма
+                            </p>    
+
+                        </div>
+                        <div class="col-6">
+                            <img class="fly-image" src="fly.png" alt="Fly" />
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="heart2.png" alt="Heart" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clip"></div>
+    <div class="page-secondary">
+        <section>
+            <div class="row">
+                <div class="col-4 flex-bottom">
+                    <article class="card">
+                        <header>
+                            <img src="product-1.png" alt="Image" />
+                        </header>png
+                        <h5>Some product</h5>
+                        <p>
+                            Крутое описание продукта, которое заставит вас его купить.
+                        </p>
+                        <button>100 рублей</button>
+                    </article>
+                </div>
+                <div class="col-4 flex-bottom">
+                    <article class="card">
+                        <header>
+                            <img src="product-2.png" alt="Image" />
+                        </header>
+                        <h5>Some product</h5>
+                        <p>
+                            Крутое описание продукта, которое заставит вас его купить.
+                        </p>
+                        <button>100 рублей</button>
+                    </article>
+                </div>
+                <div class="col-4 flex-bottom">
+                    <article class="card">
+                        <header>
+                            <img src="product-3.png" alt="Image" />
+                        </header>
+                        <h5>Some product</h5>
+                        <p>
+                            Крутое описание продукта, которое заставит вас его купить.
+                        </p>
+                        <button>100 рублей</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-3">
+                    <article class="card big">
+                        <div>
+                            Овощное пюре
+                        </div>
+                        <h5>Some product</h5>
+                        <p>
+                            Крутое описание продукта, которое заставит вас его купить.
+                        </p>
+                        <button>100 рублей</button>
+                    </article>
+                    <img src="art-1.png" alt="Image" />
+                </div>
+                <div class="col-6">
+                    <img src="product-4.png" alt="Image" />
+                </div>
+                <div class="col-3">
+                    <img src="market-1.png" alt="Image" />
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="back-secondary">
+        <div class="artbg-1">
+            <section>
+                <div class="row">
+                    <div class="col-6 flex-bottom">
+                        <article class="card">
+                            <header>
+                                <img src="product-5.png" alt="Image" />
+                            </header>
+                            <h5>Some product</h5>
+                            <p>
+                                Крутое описание продукта, которое заставит вас его купить.
+                            </p>
+                            <button>100 рублей</button>
+                        </article>
+                    </div>
+                    <div class="col-3 flex-bottom">
+                        <article class="card">
+                            <header>
+                                <img src="product-6.png" alt="Image" />
+                            </header>
+                            <h5>Some product</h5>
+                            <p>
+                                Крутое описание продукта, которое заставит вас его купить.
+                            </p>
+                            <button>100 рублей</button>
+                        </article>
+                    </div>
+                    <div class="col-3 flex-center">
+                        <article class="card big">
+                            <h5>Перед сном</h5>
+                            <p>
+                                Лёгкий ужин для спокойного сна. Злаки продлевают сытость, экстракты трав помогают
+                                расслабиться.
+                            </p>
+                            <button>В каталог</button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
