@@ -264,8 +264,6 @@ nav.right {
 }
 
 .card-image {
-    width: 293px; 
-    height: 267px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,20 +286,23 @@ nav.right {
     margin-bottom: 4.8rem; 
 }
 
-/* Вторая карточка: картинка сверху */
+
 .card-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.m40 {
+    margin-top: -40px; 
+}
+
 .card-center .card-image {
     align-self: center;
-    margin-top: -40px; /* Сдвигаем изображение выше */
 }
 
 .card-center .card-content {
-    margin-top: auto; /* Текст уходит вниз */
+    margin-top: auto; 
 }
 
 
@@ -314,6 +315,7 @@ section {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0px 40px;
+    padding-bottom: 11rem;
 }
 
 .card {
@@ -325,11 +327,8 @@ section {
     justify-content: center;
 }
 
-.card.big h5 {
-    font-size: 4.8rem;
-    line-height: 1;
-    margin-bottom: 16px;
-}
+.card.big p:first-of-type {
+    margin-bottom: 1px;}
 
 .card h5 {
     font-size: 2.4rem;
@@ -373,9 +372,9 @@ button {
 
 .row {
     display: flex;
-    align-items: flex-end
-    flex-wrap: nowrap;
-    gap: 24px;    
+    /* align-items: flex-end; */
+    /* flex-wrap: nowrap; */
+    gap: 24px;
 }
 
 .row .col-1 { flex-basis: 8.33%; }
@@ -389,6 +388,7 @@ button {
 .row .col-9 { flex-basis: 75%; }
 .row .col-10 { flex-basis: 83.33%; }
 .row .col-11 { flex-basis: 91.66%; }
+.row .col-12 { flex-basis: 100%; }
 
 .image-container {
     display: flex;
@@ -430,7 +430,8 @@ button {
     .row .col-8,
     .row .col-9,
     .row .col-10,
-    .row .col-11 {
+    .row .col-11,
+    .row .col-12 {
         flex-basis: 100%;
     }
 }
@@ -447,4 +448,48 @@ button {
 
 .content {
     padding: 0 12rem;
+}
+
+.new-products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 579px;
+    margin-bottom: 20px;
+}
+
+.new-products p {
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 432px;
+}
+
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 10px 40px 40px 40px;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer .share {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+a.link {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 0.15em;
 }
