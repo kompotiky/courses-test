@@ -13,14 +13,21 @@
     --color-page-background: #3B8FE1;
     --color-secondary: #f4f4f4;
 
+    --color-primary: #3B8FE1;
+    --color-secondary: #FFFFFF;
+    --color-dark-blue: #10487F;
+    --color-accent: #F46A1B;
+   
     --header-button-size: 32px;
     --brand-img-width: 53px;
     --brand-img-height: 35px;
 
-    --font-size-xs: 1.2rem;
-    --font-size-m: 1.6rem;
-    --font-size-l: 2.4rem;
-    --font-size-xl: 7.2rem;
+    --font-primary: "Nunito Sans", sans-serif;
+
+    --font-size-h2: 4.4rem; 
+    --font-size-h3: 2.4rem;
+    --font-size-p: 1.6rem;  
+
 }
 
 /* Container */
@@ -34,15 +41,33 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: var(--font-size-m);
-
-   
+    font-size: var(--font-size-m);  
 }
+
+h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 800; 
+    line-height: 0.9;
+    letter-spacing: 0;
+    color: var(--color-dark-blue)
+}
+
+h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2.4rem; 
+    font-weight: 800;
+    line-height: 1.05; 
+    letter-spacing: 0;
+    color: var(--color-dark-blue)
+}
+
  p {
      font-weight: 500; 
     font-size: 1.6rem;
     line-height: 1.1;
     letter-spacing: 0;
+    
  }
     a {
         text-decoration-thickness: .5px;
@@ -61,6 +86,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.col-bottom {
+    align-self: flex-end;
 }
 
 .w800 {
@@ -98,7 +127,7 @@ body {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 16px 40px;
+    padding: 13px 40px;
     display: flex;
     align-items: center;
 }
@@ -156,18 +185,22 @@ nav.right {
 /* Hero */
 
 .hero1 {
-
-    background-size: 90%; 
     display: flex;
-    align-items: center;
-    justify-content: flex-start; 
+    align-items: flex-start;
+    justify-content: space-between; 
     padding: 2.5rem 4rem;
     gap: 1rem;
+    max-width: 1000px; 
+    margin: 0 auto;
+    width: 100%; 
+    align-items: flex-start;
 }
 
 
 .hero-content {
     flex-grow: 1;
+    align-self: flex-start; 
+    margin-top: 2rem;
     
 }
 
@@ -175,6 +208,7 @@ nav.right {
 .hero-image {
     flex-shrink: 0;
     margin-left: -2.4rem;
+    align-self: center;
 }
 
 .hero-image img {
@@ -184,7 +218,7 @@ nav.right {
 }
 
 
-.hero-content h2 {
+.hero-content h1 {
     font-size: 11.0rem;
     line-height: 8rem;
     margin-bottom: 2rem;
@@ -193,7 +227,7 @@ nav.right {
 }
 
 .hero-content p {
-    margin-top: 0.1rem;
+    margin-top: 0.4rem;
 }
 
 .fly-image {
@@ -201,20 +235,77 @@ nav.right {
     margin-left: auto; 
     margin-right: 6rem; 
     margin-bottom: -1rem;
+    margin-top: 0.3rem;
 }
 
 .clip {
-    height: 100px;
+    height: 150px;
     z-index: -1;
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom:-px;
     background-color: var(--primary-bg);
     -webkit-mask-image: url(clip.svg);
     mask-image: url(clip.svg);
-    mask-size: auto 100%;
+    mask-size: auto 103%;
     mask-position: center;
     mask-repeat: repeat-x;
+    margin-bottom: -1.2rem;
 }
+
+
+/* 3 product */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 12px;
+}
+
+.card-image {
+    width: 293px; 
+    height: 267px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+
+.card-left h2 {
+    margin-bottom: 4.8rem; 
+}
+
+/* Вторая карточка: картинка сверху */
+.card-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-center .card-image {
+    align-self: center;
+    margin-top: -40px; /* Сдвигаем изображение выше */
+}
+
+.card-center .card-content {
+    margin-top: auto; /* Текст уходит вниз */
+}
+
+
+
 
 
 /* View 4 */
@@ -222,7 +313,7 @@ nav.right {
 section {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 32px 40px;
+    padding: 0px 40px;
 }
 
 .card {
@@ -246,7 +337,7 @@ section {
 
 .card p {
     font-size: 1.6rem;
-    margin-bottom: 16px;
+    margin-bottom: 7px;
 }
 
 .card button {
@@ -274,7 +365,7 @@ button {
     border-radius: 2em;
     color: white;
     border: none;
-    padding: 0.25em 1em;
+    padding: 0.25em 1.3em;
     cursor: pointer;
 }
 
@@ -282,8 +373,9 @@ button {
 
 .row {
     display: flex;
+    align-items: flex-end
     flex-wrap: nowrap;
-    gap: 24px;
+    gap: 24px;    
 }
 
 .row .col-1 { flex-basis: 8.33%; }
