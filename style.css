@@ -11,7 +11,6 @@
     --secondary-fg: #10487F;
 
     --color-page-background: #3B8FE1;
-    --color-secondary: #f4f4f4;
 
     --color-primary: #3B8FE1;
     --color-secondary: #FFFFFF;
@@ -65,7 +64,7 @@ h3 {
  p {
      font-weight: 500; 
     font-size: 1.6rem;
-    line-height: 1.1;
+    line-height: 1.0;
     letter-spacing: 0;
     
  }
@@ -126,6 +125,7 @@ h3 {
 .header {
     position: relative;
     max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     padding: 13px 40px;
     display: flex;
@@ -145,8 +145,9 @@ nav {
 }
 
 nav.left {
-    flex-grow: 1;
-    font-weight: 700;
+    display: flex;
+    justify-content: flex-start; /* Прижимает логотип к левому краю */
+    align-items: center;
 }
 
 nav.center {
@@ -182,6 +183,21 @@ nav.right {
     padding: 0 16px;
 }
 
+.price-button {
+    background: var(--color-primary);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.price-button:hover {
+    background: #2a6eb5;
+}
+
 /* Hero */
 
 .hero1 {
@@ -212,9 +228,8 @@ nav.right {
 }
 
 .hero-image img {
-    width: 48.6rem; 
-    height: 36.9rem;
-    
+    width: 100%;  
+    height: auto;
 }
 
 
@@ -239,10 +254,10 @@ nav.right {
 }
 
 .clip {
-    height: 150px;
+    min-height: 150px;
     z-index: -1;
     position: relative;
-    margin-bottom:-px;
+    margin-bottom:-12px;
     background-color: var(--primary-bg);
     -webkit-mask-image: url(clip.svg);
     mask-image: url(clip.svg);
@@ -250,6 +265,79 @@ nav.right {
     mask-position: center;
     mask-repeat: repeat-x;
     margin-bottom: -1.2rem;
+}
+
+/* 1 product */
+
+.rabbit-wrapper {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 33px;
+}
+
+.rabbit {
+    max-width:100%;
+    height: auto;
+}
+
+.market-wrapper {
+   min-width:20rem;
+    gap: 6.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.market-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.market-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.market-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 12px; 
+}
+
+.info-block {
+    background-color: #fff8e6;
+    border-radius: 12px;
+    padding: 16px 18px;
+}
+
+.info-title, .info-percentage {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 74%;
+    margin: 0;
+    color: var(--color-accent);
+}
+.info-subtitle {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    color: var(--color-accent);
+    padding-top: 3px;
+}
+.market-footer {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-accent);
+    width: 100%;
+    padding: 0px 8px;
 }
 
 
@@ -305,9 +393,23 @@ nav.right {
     margin-top: auto; 
 }
 
+/* Night */
+.porridge {
+    max-width: 110%;
+}
+.porridge-text {
+    padding: 0 4rem;
+}
 
-
-
+.snack-block {
+    padding-top: 3%;
+}
+.snack-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
 
 /* View 4 */
     
@@ -348,7 +450,7 @@ section {
 }
 
 .artbg-1 {
-    background: url('artbg-1.png') no-repeat center;
+    background: url('artbg-1.svg') no-repeat center;
     background-size: contain;
 }
 
@@ -369,7 +471,6 @@ button {
 }
 
 /* 12 columns grid */
-
 
 .row {
     display: flex;
@@ -456,8 +557,9 @@ button {
     align-items: center;
     flex-direction: column;
     gap: 12px;
-    margin-top: 579px;
     margin-bottom: 20px;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 .new-products p {

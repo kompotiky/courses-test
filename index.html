@@ -41,7 +41,7 @@
 
                         </div>
                         <div class="col-6">
-                            <img class="fly-image" src="fly.png" alt="Fly" />
+                            <img class="fly-image" src="fly.svg" alt="Fly" />
                         </div>
                     </div>
                 </div>
@@ -58,13 +58,13 @@
             <div class="row">
                 <div class="col-4 col-bottom">
                     <article class="card card-left">
-                        <h2>Питание <br> с 5 месяцев</h2>
+                        <h2>Питание с&nbsp;5 месяцев</h2>
                         <header class="card-image">
                             <img src="product-1.png" alt="Овощное пюре" />
                         </header>
                         <div class="card-content">
                             <h3>Овощное пюре</h3>
-                            <p>Натуральные овощи без соли <br> и крахмала</p>
+                            <p>Натуральные овощи без соли и крахмала</p>
                             <button class="price-button">45 ₽</button>
                         </div>
                     </article>
@@ -98,26 +98,44 @@
             </div>
         </section>
     </div>
+    
     <section>
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 rabbit-container">
                 <article class="card big">
                     <div>
                         <p> Овощное пюре </p>
                     </div>
                     <h2>Салатик винегрет</h2>
                     <p>
-                        Пюре из свёклы, моркови, картофеля и сладкого горошка. Яблоко делает вкус мягче. Без красителей, соли и крахмала – только натуральные овощи
+                        Пюре из свёклы, моркови, картофеля и сладкого горошка. Яблоко делает вкус мягче. 
+                        Без красителей, соли и крахмала – только натуральные овощи.
                     </p>
                     <button>45 ₽</button>
                 </article>
-                <img src="art-1.png" alt="Image" />
-            </div>
+                <div class="rabbit-wrapper">
+                    <img class="rabbit" src="art-1.svg" >
+                </div>
+            </div>            
             <div class="col-6">
                 <img src="product-4.png" alt="Image" />
             </div>
-            <div class="col-3">
-                <img src="market-1.png" alt="Image" />
+            <div class="col-3 market-wrapper">
+                <img class="market-image" src="art-3.svg" alt="Тигр"/>  
+                <div class="market-content">
+                    <div class="market-info">
+                        <div class="info-block">
+                            <p class="info-title">Без</p>
+                            <p class="info-title">соли</p>
+                        </div>
+                        <div class="info-block">
+                            <p class="info-percentage">100%</p>
+                            <p class="info-subtitle">натурально</p>
+                        </div>
+                    </div>
+                    <p class="market-footer">Только овощи и вода</p>
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -128,10 +146,10 @@
                     <div class="col-6 flex-bottom">
                         <article class="card">
                             <header>
-                                <img src="product-5.png" alt="Image" />
+                                <img class="porridge" src="product-5.png" alt="Image" />
                             </header>
                             <h3>Пшеничное печенье с мелиссой</h3>
-                            <p>
+                            <p porridge-text >
                                 Злаки насыщают, мелисса расслабляет
                             </p>
                             <button>105 ₽</button>
@@ -161,6 +179,39 @@
                 </div>
             </section>
         </div>
+        <div class="snack-block">
+            <section>
+                <div class="row">
+                    <div class="col-5 flex-bottom">
+                        <article class="card">
+                            <h2>Полезный перекус</h2>
+                            <p>
+                                Из сока и пюре, без сахара. Дарит яркий вкус и помогает развивать моторику.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-4 flex-bottom">
+                        <article class="card">
+                            <div>
+                                <img src="art2.svg" alt="Иллюстрация" />
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-3 flex-center">
+                        <article class="card big">
+                            <h3>Фруктовый микс</h3>
+                            <p>
+                                Ананас, яблоко, груша, слива. Без сахара.
+                            </p>
+                            <button class="price-button">45 ₽</button>
+                        </article>
+                    </div>
+                </div>
+                <div class="snack-image">
+                    <img src="snack.png" alt="Фруктовый батончик" />
+                </div>
+            </section>
+        </div>
         <section>
             <div class="row">
                 <div class="col-12 new-products">
@@ -176,8 +227,7 @@
                         </header>
                         <div class="card-content">
                             <h3>Пюре</h3>
-                            <p>Фрукты и злаки –  <br> 
-                                яблоко, банан, овёс</p>
+                            <p class="break-text">Фрукты и злаки – яблоко,&nbsp;банан, овёс</p>
                             <button class="price-button">80 ₽</button>
                         </div>
                     </article>
@@ -203,7 +253,7 @@
                         </header>
                         <div class="card-content">
                             <h3>Пюре</h3>
-                            <p>Яблоко, малина  и экстракт мелиссы</p>
+                            <p>Яблоко, малина  и&nbsp;экстракт мелиссы</p>
                             <button class="price-button">42 ₽</button>
                         </div>
                     </article>
@@ -243,7 +293,6 @@
                 <a href="#"><img src="ok.svg" alt="OK" /></a>
             </div>
         </footer>
-
     </div>
 </body>
 </html>
